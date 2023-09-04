@@ -1,4 +1,4 @@
-#ifdef __arm__
+#ifdef __ARM_ARCH_ISA_A64
 #include "HookerArm64.h"
 #include <sys/cachectl.h>
 
