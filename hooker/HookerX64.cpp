@@ -8,7 +8,7 @@
 #include <sys/mman.h>
 #include "Hooker.h"
 #include "HookerX64.h"
-#include "Memory.h"
+#include "memory.h"
 #include <iostream>
 
 void hooker::HookerX64::doHook(void *func,void *newAddr,void **origFunc) const {
