@@ -7,7 +7,7 @@
 #include "HookerX86.h"
 #elif defined(__arm__)
 #include "HookerArm.h"
-#elif defined(__ARM_ARCH_ISA_A64)
+#elif defined(__aarch64__)
 #include "HookerArm64.h"
 #elif defined(__thumb__)
 #include "HookerThumb.h"

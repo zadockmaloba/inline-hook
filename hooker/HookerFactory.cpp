@@ -22,7 +22,7 @@ hooker::Hooker* hooker::HookerFactory::createHooker() {
     return new hooker::HookerX86;
 #elif defined(__arm__)
     return new hooker::HookerArm;
-#elif defined(__ARM_ARCH_ISA_A64)
+#elif defined(__aarch64__)
 	return new hooker::HookerArm64;	
 #elif defined(__thumb__)
     return new hooker::HookerThumb;

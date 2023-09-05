@@ -1,6 +1,6 @@
-#ifdef __ARM_ARCH_ISA_A64
+#if defined(__aarch64__)
 #include "HookerArm64.h"
-#include <sys/cachectl.h>
+//#include <sys/cachectl.h>
 
 void hooker::HookerArm64::doHook(void *func, void *newAddr, void **origFunc) const {
     // Cast the function pointer to the appropriate type
@@ -19,8 +19,9 @@ void hooker::HookerArm64::doHook(void *func, void *newAddr, void **origFunc) con
     targetFunc[0] = jumpInstruction;
     targetFunc[1] = jumpAddress;
 
+/*
 #ifdef cacheflush
     cacheflush((long)func,(long)func + 8, 0);
-#endif
+#endif */
 }
 #endif
