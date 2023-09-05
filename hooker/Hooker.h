@@ -6,6 +6,7 @@
 #define C_11_HOOKER_H
 
 #include <cstdint>
+#include <cstddef>
 #include <unordered_map>
 
 namespace hooker {
